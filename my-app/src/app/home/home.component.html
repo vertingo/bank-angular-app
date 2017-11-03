@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="row ">
+    
+    <div class="col-lg-4">
+      <div class="vertical-menu">
+        <a href="#" class="active">Home</a>
+        <a (click)="virement()">Ajouter virement</a>
+        <a (click)="retrait()">retrait</a>
+        <a routerLink="virement">statistic</a>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+        <p>virement</p>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">RIB dest</th>
+                <th scope="col">montant</th>
+                <th scope="col">libelle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>123456789</td>
+                <td>75.00</td>
+                <td>pass navigo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>987654321</td>
+                <td>500.00</td>
+                <td>logement</td>
+              </tr>
+             
+            </tbody>
+          </table>
+      </div>
+
+
+      <div class="col-lg-4">
+        <p>retrait</p>
+          <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Somme</th>
+                  <th scope="col">lieu</th>
+                  <th scope="col">date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>300</td>
+                  <td>paris</td>
+                  <td>02/11/2017</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>50</td>
+                  <td>paris</td>
+                  <td>02/11/2017</td>
+                </tr>
+               
+              </tbody>
+            </table>
+        </div>
+    
+  </div>
+</body>
+</html>
